@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mquiz.css">
+
+    <title>History Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .slide {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .option {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>History Questions</h1>
+        <div class="slide">
+            <div class="question">
+                <p>1. Who was the first president of the United States?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Thomas Jefferson</div>
+                    <div class="option" onclick="checkAnswer(this)">B. George Washington</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Abraham Lincoln</div>
+                    <div class="option" onclick="checkAnswer(this)">D. John Adams</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>2. When did World War II end?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. 1945</div>
+                    <div class="option" onclick="checkAnswer(this)">B. 1939</div>
+                    <div class="option" onclick="checkAnswer(this)">C. 1941</div>
+                    <div class="option" onclick="checkAnswer(this)">D. 1943</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>3. Which country was not part of the Axis Powers in World War II?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Japan</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Germany</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Italy</div>
+                    <div class="option" onclick="checkAnswer(this)">D. United Kingdom</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>4. Who wrote the Declaration of Independence?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Thomas Jefferson</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Benjamin Franklin</div>
+                    <div class="option" onclick="checkAnswer(this)">C. George Washington</div>
+                    <div class="option" onclick="checkAnswer(this)">D. John Hancock</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>5. What year was the Berlin Wall torn down?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. 1989</div>
+                    <div class="option" onclick="checkAnswer(this)">B. 1961</div>
+                    <div class="option" onclick="checkAnswer(this)">C. 1975</div>
+                    <div class="option" onclick="checkAnswer(this)">D. 1991</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkAnswer(element) {
+            if (element.textContent.includes("George Washington") || element.textContent.includes("1945") || element.textContent.includes("United Kingdom") || element.textContent.includes("Thomas Jefferson") || element.textContent.includes("1989")) {
+                element.style.backgroundColor = 'green';
+            } else {
+                element.style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</body>
+
+</html>

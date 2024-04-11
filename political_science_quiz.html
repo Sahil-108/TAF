@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mquiz.css">
+
+    <title>Political Science Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .slide {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .option {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Political Science Questions</h1>
+        <div class="slide">
+            <div class="question">
+                <p>1. Who is considered the father of modern political science?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Aristotle</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Niccolò Machiavelli</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Thomas Hobbes</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Jean-Jacques Rousseau</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>2. Which political ideology advocates for the abolition of private property?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Capitalism</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Socialism</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Conservatism</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Liberalism</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>3. What is the term for a system of government where power is held by a small group of people?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Democracy</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Monarchy</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Oligarchy</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Dictatorship</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>4. Who coined the term "the invisible hand" to describe the self-regulating nature of the market?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Adam Smith</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Karl Marx</div>
+                    <div class="option" onclick="checkAnswer(this)">C. John Locke</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Voltaire</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>5. What is the name for a political system with a single ruler who holds absolute power?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Monarchy</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Oligarchy</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Autocracy</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Republic</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkAnswer(element) {
+            if (element.textContent.includes("Niccolò Machiavelli") || element.textContent.includes("Socialism") || element.textContent.includes("Oligarchy") || element.textContent.includes("Adam Smith") || element.textContent.includes("Autocracy")) {
+                element.style.backgroundColor = 'green';
+            } else {
+                element.style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</body>
+
+</html>

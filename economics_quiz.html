@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mquiz.css">
+
+    <title>Economics Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .slide {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .option {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Economics Questions</h1>
+        <div class="slide">
+            <div class="question">
+                <p>1. What is the study of how people and societies use limited resources to satisfy unlimited wants?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Sociology</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Psychology</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Economics</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Anthropology</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>2. What is the term for the total value of all final goods and services produced in a country in a given period of time?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. GDP</div>
+                    <div class="option" onclick="checkAnswer(this)">B. CPI</div>
+                    <div class="option" onclick="checkAnswer(this)">C. GNP</div>
+                    <div class="option" onclick="checkAnswer(this)">D. PPP</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>3. What is the term for the measure of responsiveness of the quantity demanded of a good to a change in its price?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Inflation</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Elasticity</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Monopoly</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Demand Curve</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>4. What is the term for the condition where resources are allocated inefficiently, resulting in waste?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Scarcity</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Monopoly</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Market Failure</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Externalities</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>5. What is the term for the study of how individuals, businesses, and governments make choices about the allocation of resources?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Microeconomics</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Macroeconomics</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Econometrics</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Environmental Economics</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkAnswer(element) {
+            if (element.textContent.includes("Economics") || element.textContent.includes("GDP") || element.textContent.includes("Elasticity") || element.textContent.includes("Market Failure") || element.textContent.includes("Microeconomics")) {
+                element.style.backgroundColor = 'green';
+            } else {
+                element.style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</body>
+
+</html>

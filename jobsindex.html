@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobs After 10th</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+<div class="navbar">
+  <div class="logo">
+      <h3>TAF</h3>
+      <p>Think about future</p>
+  </div>
+  <ul class="nav-menu">
+      <li class="nav-items"><a href="index.html" class="nav-links" >Home</a></li>
+      <li class="nav-items"><a href="jobsindex.html" class="nav-links">Jobs</a></li>
+      <li class="nav-items"><a href="about.html" class="nav-links">About</a></li>
+      <li class="nav-items"><a href="contact.html" class="nav-links">Contact</a></li>
+      <li class="nav-items"><button>Sign Up</button></li>
+  </ul> 
+</div>
+
+  <header>
+    <h1>Jobs</h1>
+  </header>
+  
+  <div class="slider-container">
+    <div class="slider">
+      <button onclick="showGovtJobs()">Government Jobs</button>
+      <button onclick="showPrivateJobs()">Private Jobs</button>
+    </div>
+    <div class="slides">
+      <div class="slide govt-jobs">
+        <h2>Government Jobs</h2>
+        <div class="job-card">
+          <h3>Railway Group D</h3>
+          <p>Group D jobs in the Indian Railways include positions such as Track Maintainer, Pointsman, Gateman, etc.</p>
+          <button class="apply-btn" onclick="window.location.href = 'https://www.google.com';">Apply</button>
+        </div>
+        <div class="job-card">
+          <h3>Indian Administrative Services (IAS)</h3>
+          <p>High-ranking administrative job in the Government of India.</p>
+          <button class="apply-btn" onclick="window.location.href = 'https://www.google.com';">Apply</button>
+        </div>
+        <!-- Add more government job cards here -->
+        <!-- For example: -->
+        <div class="job-card">
+          <h3>Police Constable</h3>
+          <p>Entry-level job in the police department involving maintaining law and order.</p>
+          <button class="apply-btn" onclick="window.location.href = 'https://www.google.com';">Apply</button>
+        </div>
+        <!-- Add more government job cards here -->
+      </div>
+
+      <div class="slide private-jobs">
+        <h2>Private Jobs</h2>
+        <div class="job-card">
+          <h3>Data Entry Operator</h3>
+          <p>Entry-level job involving entering data into a computer system for various organizations.</p>
+          <button class="apply-btn" onclick="window.location.href = 'https://www.google.com';">Apply</button>
+
+        </div>
+        <div class="job-card">
+          <h3>Software Developer</h3>
+          <p>Develop software applications for private companies.</p>
+          <button class="apply-btn" onclick="window.location.href = 'https://www.google.com';">Apply</button>
+        </div>
+        <!-- Add more private job cards here -->
+        <!-- For example: -->
+        <div class="job-card">
+          <h3>Customer Service Representative</h3>
+          <p>Handle customer inquiries, complaints, and provide information about products and services.</p>
+          <button class="apply-btn" onclick="window.location.href = 'https://www.google.com';">Apply</button>
+        </div>
+        <!-- Add more private job cards here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

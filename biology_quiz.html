@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mquiz.css">
+    <title>Biology Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .slide {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .option {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Biology Questions</h1>
+        <div class="slide">
+            <div class="question">
+                <p>1. Which organelle is known as the powerhouse of the cell?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Mitochondria</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Nucleus</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Golgi Apparatus</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Endoplasmic Reticulum</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>2. Which of the following is the largest organ in the human body?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Liver</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Brain</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Skin</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Heart</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>3. What is the process by which plants make their food?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Respiration</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Transpiration</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Photosynthesis</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Reproduction</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>4. Which part of the human brain controls voluntary movements?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Cerebrum</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Cerebellum</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Brainstem</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Hypothalamus</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>5. Which blood vessel carries oxygenated blood from the lungs to the heart?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Pulmonary Artery</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Pulmonary Vein</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Aorta</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Inferior Vena Cava</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkAnswer(element) {
+            if (element.textContent.includes("Mitochondria") || element.textContent.includes("Skin") || element.textContent.includes("Photosynthesis") || element.textContent.includes("Cerebrum") || element.textContent.includes("Pulmonary Vein")) {
+                element.style.backgroundColor = 'green';
+            } else {
+                element.style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</body>
+
+</html>

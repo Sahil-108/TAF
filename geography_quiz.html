@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mquiz.css">
+
+    <title>Geography Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .slide {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .option {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Geography Questions</h1>
+        <div class="slide">
+            <div class="question">
+                <p>1. What is the capital city of France?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. London</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Rome</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Paris</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Berlin</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>2. Which river is the longest in the world?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Amazon</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Nile</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Mississippi</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Yangtze</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>3. What is the largest desert in the world?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Sahara</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Gobi</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Kalahari</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Atacama</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>4. Which ocean is the largest by area?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Atlantic</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Pacific</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Indian</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Arctic</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>5. What is the tallest mountain in the world?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Mount Kilimanjaro</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Mount Everest</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Mount Fuji</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Mount McKinley</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkAnswer(element) {
+            if (element.textContent.includes("Paris") || element.textContent.includes("Nile") || element.textContent.includes("Sahara") || element.textContent.includes("Pacific") || element.textContent.includes("Mount Everest")) {
+                element.style.backgroundColor = 'green';
+            } else {
+                element.style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</body>
+
+</html>

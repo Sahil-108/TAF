@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mquiz.css">
+
+    <title>Accountancy Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .slide {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .option {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Accountancy Questions</h1>
+        <div class="slide">
+            <div class="question">
+                <p>1. Which of the following is a financial statement that reports a company's assets, liabilities, and shareholders' equity at a specific point in time?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Income Statement</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Balance Sheet</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Cash Flow Statement</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Trial Balance</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>2. Which of the following is a financial document that shows a company's revenues and expenses over a specific period of time?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Balance Sheet</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Income Statement</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Cash Flow Statement</div>
+                    <div class="option" onclick="checkAnswer(this)">D. General Ledger</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>3. Which of the following is an accounting principle that requires revenue to be recorded when it is earned, regardless of when the cash is received?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Matching Principle</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Revenue Recognition Principle</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Conservatism Principle</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Materiality Principle</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>4. Which of the following is a type of account that represents amounts owed by customers to a company for goods or services sold on credit?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Accounts Payable</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Accounts Receivable</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Prepaid Expenses</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Accumulated Depreciation</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>5. Which of the following is a financial statement that shows a company's cash inflows and outflows over a specific period of time?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Income Statement</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Balance Sheet</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Cash Flow Statement</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Trial Balance</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkAnswer(element) {
+            if (element.textContent.includes('Balance Sheet') || element.textContent.includes('Income Statement') || element.textContent.includes('Revenue Recognition Principle') || element.textContent.includes('Accounts Receivable') || element.textContent.includes('Cash Flow Statement')) {
+                element.style.backgroundColor = 'green';
+            } else {
+                element.style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</body>
+
+</html>

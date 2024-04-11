@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mquiz.css">
+
+    <title>Business Studies Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .slide {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .option {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Business Studies Questions</h1>
+        <div class="slide">
+            <div class="question">
+                <p>1. Which of the following is a function of management that involves setting goals and determining the best ways to achieve them?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Planning</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Organizing</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Directing</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Controlling</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>2. Which of the following refers to the process of dividing work among employees and coordinating their activities to achieve organizational goals?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Delegation</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Authority</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Coordination</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Departmentalization</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>3. Which of the following is a type of business ownership where the business is owned and operated by a single individual?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Partnership</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Corporation</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Sole Proprietorship</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Limited Liability Company</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>4. Which of the following refers to the process of influencing and motivating employees to achieve organizational objectives?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Leadership</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Supervision</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Motivation</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Delegation</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>5. Which of the following is a document that outlines the organization's mission, vision, values, and objectives, and guides its strategic direction?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Business Plan</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Budget</div>
+                    <div class="option" onclick="checkAnswer(this)">C. SWOT Analysis</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Strategic Plan</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkAnswer(element) {
+            if (element.textContent.includes("Planning") || element.textContent.includes("Departmentalization") || element.textContent.includes("Sole Proprietorship") || element.textContent.includes("Leadership") || element.textContent.includes("Strategic Plan")) {
+                element.style.backgroundColor = 'green';
+            } else {
+                element.style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</body>
+</html>

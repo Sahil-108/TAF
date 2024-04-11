@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mquiz.css">
+
+    <title>Mathematics Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .slide {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .option {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mathematics Questions</h1>
+        <div class="slide">
+            <div class="question">
+                <p>1. What is the value of π (pi) rounded to two decimal places?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. 3.14</div>
+                    <div class="option" onclick="checkAnswer(this)">B. 3.12</div>
+                    <div class="option" onclick="checkAnswer(this)">C. 3.16</div>
+                    <div class="option" onclick="checkAnswer(this)">D. 3.18</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>2. What is the square root of 144?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. 10</div>
+                    <div class="option" onclick="checkAnswer(this)">B. 12</div>
+                    <div class="option" onclick="checkAnswer(this)">C. 14</div>
+                    <div class="option" onclick="checkAnswer(this)">D. 16</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>3. If a = 5 and b = 3, what is the value of a + b?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. 7</div>
+                    <div class="option" onclick="checkAnswer(this)">B. 8</div>
+                    <div class="option" onclick="checkAnswer(this)">C. 9</div>
+                    <div class="option" onclick="checkAnswer(this)">D. 10</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>4. What is the result of 6 * 7?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. 36</div>
+                    <div class="option" onclick="checkAnswer(this)">B. 42</div>
+                    <div class="option" onclick="checkAnswer(this)">C. 49</div>
+                    <div class="option" onclick="checkAnswer(this)">D. 56</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>5. What is the value of 2^5 (2 raised to the power of 5)?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. 16</div>
+                    <div class="option" onclick="checkAnswer(this)">B. 24</div>
+                    <div class="option" onclick="checkAnswer(this)">C. 32</div>
+                    <div class="option" onclick="checkAnswer(this)">D. 64</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkAnswer(element) {
+            if (element.textContent.includes("3.14") || element.textContent.includes("12") || element.textContent.includes("8") || element.textContent.includes("42") || element.textContent.includes("32")) {
+                element.style.backgroundColor = 'green';
+            } else {
+                element.style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</body>
+
+</html>

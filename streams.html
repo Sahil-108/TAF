@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Subjects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .stream-box {
+            width: 100%;
+            height: 100px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .stream-box:hover {
+            background-color: #ddd;
+        }
+        .subjects {
+            display: none;
+            width: 100%;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center subject boxes horizontally */
+            animation: fadeIn 0.3s ease forwards; /* Animation to fade in subjects */
+        }
+        .subject-box {
+            width: 45%;
+            background-color: #ddd;
+            border: 1px solid #ccc;
+            margin: 5px;
+            text-align: center;
+            line-height: 50px;
+            display: none; /* Initially hide subject boxes */
+        }
+        .subject-box a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Colors for different subject streams */
+        #medical-subjects .subject-box:nth-child(1) { background-color: #ff9999; }
+        #medical-subjects .subject-box:nth-child(2) { background-color: #99ccff; }
+        #medical-subjects .subject-box:nth-child(3) { background-color: #ffcc99; }
+        #medical-subjects .subject-box:nth-child(4) { background-color: #99ff99; }
+        #medical-subjects .subject-box:nth-child(5) { background-color: #ccccff; }
+
+        #non-medical-subjects .subject-box:nth-child(1) { background-color: #ff9999; }
+        #non-medical-subjects .subject-box:nth-child(2) { background-color: #99ccff; }
+        #non-medical-subjects .subject-box:nth-child(3) { background-color: #ffcc99; }
+        #non-medical-subjects .subject-box:nth-child(4) { background-color: #ccccff; }
+
+        #commerce-subjects .subject-box:nth-child(1) { background-color: #ffff99; }
+        #commerce-subjects .subject-box:nth-child(2) { background-color: #99ccff; }
+        #commerce-subjects .subject-box:nth-child(3) { background-color: #ff9999; }
+        #commerce-subjects .subject-box:nth-child(4) { background-color: #ccccff; }
+        #commerce-subjects .subject-box:nth-child(5) { background-color: #ccccff; }
+
+        #arts-subjects .subject-box:nth-child(1) { background-color: #ffcc99; }
+        #arts-subjects .subject-box:nth-child(2) { background-color: #99ff99; }
+        #arts-subjects .subject-box:nth-child(3) { background-color: #99ccff; }
+        #arts-subjects .subject-box:nth-child(4) { background-color: #ff9999; }
+        #arts-subjects .subject-box:nth-child(5) { background-color: #ccccff; }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Media query for mobile view */
+        @media only screen and (max-width: 600px) {
+            .stream-box {
+                font-size: 14px;
+                line-height: normal;
+            }
+            .subject-box {
+                width: 90%;
+                margin: 5px auto;
+                line-height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Stream Subjects</h1>
+    </div>
+    <div class="container">
+        <div class="stream-box" onclick="toggleSubjects('medical')">Medical Stream</div>
+        <div class="subjects" id="medical-subjects">
+            <div class="subject-box"><a href="physics.html">Physics</a></div>
+            <div class="subject-box"><a href="chem.html">Chemistry</a></div>
+            <div class="subject-box"><a href="math.html">Maths</a></div>
+            <div class="subject-box"><a href="biology.html">Biology</a></div>
+            <div class="subject-box"><a href="english.html">English</a></div>
+        </div>
+        
+        <div class="stream-box" onclick="toggleSubjects('non-medical')">Non-Medical Stream</div>
+        <div class="subjects" id="non-medical-subjects">
+            <div class="subject-box"><a href="physics.html">Physics</a></div>
+            <div class="subject-box"><a href="chem.html">Chemistry</a></div>
+            <div class="subject-box"><a href="math.html">Maths</a></div>
+            <div class="subject-box"><a href="english.html">English</a></div>
+        </div>
+
+        <div class="stream-box" onclick="toggleSubjects('commerce')">Commerce Stream</div>
+        <div class="subjects" id="commerce-subjects">
+            <div class="subject-box"><a href="accountancy.html">Accountancy</a></div>
+            <div class="subject-box"><a href="business.html">Business Studies</a></div>
+            <div class="subject-box"><a href="economics.html">Economics</a></div>
+            <div class="subject-box"><a href="math.html">Maths</a></div>
+            <div class="subject-box"><a href="english.html">English</a></div>
+        </div>
+
+        <div class="stream-box" onclick="toggleSubjects('arts')">Arts Stream</div>
+        <div class="subjects" id="arts-subjects">
+            <div class="subject-box"><a href="history.html">History</a></div>
+            <div class="subject-box"><a href="political.html">Political Science</a></div>
+            <div class="subject-box"><a href="geography.html">Geography</a></div>
+            <div class="subject-box"><a href="economics.html">Economics</a></div>
+            <div class="subject-box"><a href="english.html">English</a></div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSubjects(stream) {
+            var subjects = document.getElementById(stream + "-subjects");
+            var allSubjects = document.querySelectorAll('.subjects');
+            allSubjects.forEach(function(item) {
+                if(item.id !== stream + "-subjects") {
+                    item.style.display = "none";
+                }
+            });
+            if (subjects.style.display === "none" || subjects.style.display === "") {
+                subjects.style.display = "flex"; // Change display to flex to show subjects
+                var subjectBoxes = subjects.querySelectorAll('.subject-box');
+                subjectBoxes.forEach(function(item) {
+                    item.style.display = "block"; // Show subject boxes
+                });
+            } else {
+                subjects.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

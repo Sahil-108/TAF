@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mquiz.css">
+
+    <title>English Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .slide {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        .option {
+            cursor: pointer;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>English Questions</h1>
+        <div class="slide">
+            <div class="question">
+                <p>1. Which of the following is a synonym for "happy"?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Sad</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Joyful</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Angry</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Tired</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>2. What is the plural form of "child"?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Childs</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Children</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Childers</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Childs</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>3. Which of the following is a preposition?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Run</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Under</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Sing</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Laugh</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>4. What is the past tense of "eat"?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Ate</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Eat</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Eaten</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Eating</div>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>5. What part of speech is the word "quickly"?</p>
+                <div class="options">
+                    <div class="option" onclick="checkAnswer(this)">A. Adjective</div>
+                    <div class="option" onclick="checkAnswer(this)">B. Adverb</div>
+                    <div class="option" onclick="checkAnswer(this)">C. Verb</div>
+                    <div class="option" onclick="checkAnswer(this)">D. Noun</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function checkAnswer(element) {
+            if (element.textContent.includes("Joyful") || element.textContent.includes("Children") || element.textContent.includes("Under") || element.textContent.includes("Ate") || element.textContent.includes("Adverb")) {
+                element.style.backgroundColor = 'green';
+            } else {
+                element.style.backgroundColor = 'red';
+            }
+        }
+    </script>
+</body>
+
+</html>
